@@ -1,0 +1,213 @@
+.ctaFooter {
+  position: relative;
+  overflow: hidden;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-primary);
+  position: relative;
+}
+
+.ctaContainer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.ctaBanner {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 50%, #007a6e 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-16) var(--space-12);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaBannerBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                     radial-gradient(circle at 80% 50%, rgba(255,255,255,0.2) 0%, transparent 50%);
+}
+
+.ctaHeading {
+  font-family: var(--font-inter);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 900;
+  color: var(--bg-primary);
+  line-height: 1;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+}
+
+.ctaArrow {
+  font-size: clamp(2rem, 5vw, 4rem);
+  display: inline-flex;
+  align-items: center;
+  transition: transform var(--transition-base);
+}
+
+.ctaBanner:hover .ctaArrow {
+  transform: translateX(10px);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-primary);
+  padding: var(--space-16) 0 var(--space-8);
+  border-top: 1px solid var(--border);
+}
+
+.footerContainer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
+}
+
+.footerBrand {
+  max-width: 300px;
+}
+
+.footerLogo {
+  font-family: var(--font-inter);
+  font-size: var(--font-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.footerLogoAccent {
+  color: var(--accent);
+}
+
+.footerDescription {
+  font-family: var(--font-inter);
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+
+.socialLinks {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.socialLink {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  transition: all var(--transition-base);
+}
+
+.socialLink:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+}
+
+.footerColumn h4 {
+  font-family: var(--font-inter);
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-6);
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footerLink {
+  font-family: var(--font-inter);
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.footerLink:hover {
+  color: var(--accent);
+}
+
+.footerBottom {
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.copyright {
+  font-family: var(--font-inter);
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+.bottomLinks {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.bottomLink {
+  font-family: var(--font-inter);
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.bottomLink:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 968px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .ctaHeading {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

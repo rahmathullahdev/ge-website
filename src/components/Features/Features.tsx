@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 
@@ -42,7 +42,7 @@ const features = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: { 
     opacity: 1, 
@@ -50,7 +50,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50, scale: 0.95 },
   visible: { 
     opacity: 1, 

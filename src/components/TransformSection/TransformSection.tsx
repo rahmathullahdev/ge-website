@@ -91,7 +91,7 @@ export default function TransformSection() {
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                className="absolute top-1/4 -right-2 lg:-right-4 bg-white p-3 rounded-xl shadow-2xl flex items-center gap-2 border border-pink-200 z-20"
+                className="absolute top-1/4 -right-2 lg:-right-4 bg-white p-3 rounded-xl shadow-2xl hidden lg:flex items-center gap-2 border border-pink-200 z-20"
               >
                 <div className="w-9 h-9 bg-orange-100 rounded-full flex items-center justify-center text-base">
                   🧑‍💼
@@ -104,7 +104,7 @@ export default function TransformSection() {
               </motion.div>
 
               {/* Widget 2: Floating name tag */}
-              <div className="absolute top-[45%] right-4 md:right-0 z-20">
+              <div className="absolute top-[45%] right-4 md:right-0 z-20 hidden lg:block">
                 <div className="bg-[#ffe066] px-3 py-1 rounded-lg text-[10px] font-bold text-black relative shadow-md">
                   Mary M.
                   <div className="absolute w-2 h-2 bg-[#ffe066] rotate-45 -bottom-1 left-4"></div>
@@ -116,7 +116,7 @@ export default function TransformSection() {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                className="absolute bottom-8 -left-4 md:-left-8 bg-white rounded-2xl p-5 shadow-2xl w-64 z-20 border border-gray-100"
+                className="absolute bottom-8 -left-4 md:-left-8 bg-white rounded-2xl p-5 shadow-2xl w-64 z-20 border border-gray-100 hidden lg:block"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-8 h-8 rounded-lg bg-[#0e3d36] flex items-center justify-center text-white">

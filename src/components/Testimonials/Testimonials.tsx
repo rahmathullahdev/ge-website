@@ -84,18 +84,18 @@ export default function Testimonials() {
         </div>
 
         {/* The Main Flex Slider track matching exact layout balance */}
-        <div className="relative max-w-5xl mx-auto flex items-center justify-between">
+        <div className="relative max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-2 md:px-0">
           
           {/* Mini Floating Prev Nav */}
           <button 
             onClick={prevSlide}
-            className="w-10 h-10 bg-gray-900 dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center hover:bg-gray-700 dark:hover:bg-gray-200 transition-all z-20 shadow-lg active:scale-95 shrink-0"
+            className="hidden md:flex w-10 h-10 bg-gray-900 dark:bg-white text-white dark:text-black rounded-full items-center justify-center hover:bg-gray-700 dark:hover:bg-gray-200 transition-all z-20 shadow-lg active:scale-95 shrink-0"
           >
             <HiArrowLeft size={18} />
           </button>
 
           {/* Inner content container where the content centers */}
-          <div className="relative w-full h-[300px] flex justify-center items-center overflow-visible">
+          <div className="relative w-full h-[550px] md:h-[300px] flex justify-center items-center overflow-visible md:px-8">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={active.id}
@@ -111,7 +111,7 @@ export default function Testimonials() {
                 className="absolute flex flex-col md:flex-row items-center justify-center gap-12 px-4 w-full max-w-3xl"
               >
                 {/* Exact Circular visual frame matching the render */}
-                <div className="relative w-[240px] h-[240px] shrink-0">
+                <div className="relative w-[200px] h-[200px] md:w-[240px] md:h-[240px] shrink-0">
                    <div className="absolute inset-0 rounded-full overflow-hidden flex items-center justify-center bg-[#FDF3EB] shadow-lg">
                       <div className="w-full h-full relative">
                         <Image 
@@ -150,11 +150,27 @@ export default function Testimonials() {
           {/* Mini Floating Next Nav */}
           <button 
             onClick={nextSlide}
-            className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:bg-gray-200 transition-all z-20 shadow-lg active:scale-95 shrink-0"
+            className="hidden md:flex w-10 h-10 bg-white text-black rounded-full items-center justify-center hover:bg-gray-200 transition-all z-20 shadow-lg active:scale-95 shrink-0 border border-gray-200 dark:border-none"
           >
             <HiArrowRight size={18} />
           </button>
           
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="flex justify-center items-center gap-6 mt-4 md:hidden relative z-20">
+          <button 
+            onClick={prevSlide}
+            className="w-12 h-12 bg-gray-900 dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center hover:bg-gray-700 dark:hover:bg-gray-200 transition-all shadow-lg active:scale-95"
+          >
+            <HiArrowLeft size={20} />
+          </button>
+          <button 
+            onClick={nextSlide}
+            className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:bg-gray-200 transition-all shadow-lg active:scale-95 border border-gray-200 dark:border-none"
+          >
+            <HiArrowRight size={20} />
+          </button>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center overflow-hidden bg-[#F9FAFB] dark:bg-[#0A0A0A] pt-20 transition-colors duration-300"
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#F9FAFB] dark:bg-[#0A0A0A] pt-32 md:pt-40 pb-20 transition-colors duration-300"
     >
       {/* ── Geometric Teal Shapes ── */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">

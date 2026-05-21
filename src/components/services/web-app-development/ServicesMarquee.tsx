@@ -21,7 +21,7 @@ export default function ServicesMarquee() {
                 >
                   {service}
                 </span>
-                <span className="text-2xl text-[#00BFA6]">✦</span>
+                <span className="text-2xl text-[#06BAA3]">✦</span>
               </span>
             ))}
           </div>

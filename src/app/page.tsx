@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero/Hero";
-import ServicesMarquee from "@/components/ServicesMarquee/ServicesMarquee";
+import ServicesMarquee from "@/components/services/web-app-development/ServicesMarquee";
 import TransformSection from "@/components/TransformSection/TransformSection";
 import Features from "@/components/Features/Features";
 import SuccessStories from "@/components/SuccessStories/SuccessStories";

@@ -16,7 +16,7 @@ export default function Hero() {
         <div
           className="absolute top-[8%] right-[12%] w-[340px] h-[500px] opacity-90 dark:opacity-90"
           style={{
-            background: "linear-gradient(135deg, #00BFA6 0%, #009688 100%)",
+            background: "linear-gradient(135deg, #06BAA3 0%, #009688 100%)",
             clipPath: "polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%)",
           }}
         />
@@ -24,17 +24,17 @@ export default function Hero() {
         <div
           className="absolute top-[4%] right-[3%] w-[280px] h-[520px] opacity-70 dark:opacity-70"
           style={{
-            background: "linear-gradient(180deg, #007a6e 0%, #00BFA6 100%)",
+            background: "linear-gradient(180deg, #007a6e 0%, #06BAA3 100%)",
             clipPath: "polygon(50% 0%, 100% 30%, 80% 100%, 0% 80%)",
           }}
         />
         {/* Soft glow blobs */}
-        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-[#00BFA6] opacity-[0.08] dark:opacity-[0.12] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-[80px]" />
-        <div className="absolute bottom-[-15%] left-[-10%] w-[500px] h-[500px] bg-[#00BFA6] opacity-[0.05] dark:opacity-[0.08] rounded-full blur-[100px]" />
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-[#06BAA3] opacity-[0.08] dark:opacity-[0.12] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-[80px]" />
+        <div className="absolute bottom-[-15%] left-[-10%] w-[500px] h-[500px] bg-[#06BAA3] opacity-[0.05] dark:opacity-[0.08] rounded-full blur-[100px]" />
       </div>
 
       {/* ── Main Content ── */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full -mt-6 md:-mt-10 lg:-mt-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           {/* LEFT: Text */}
@@ -48,7 +48,7 @@ export default function Hero() {
             {/* Headline */}
             <h1 className="font-extrabold text-gray-900 dark:text-white leading-[1.05] tracking-tight mb-4" style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.8rem)" }}>
               Reliable &amp; <br />
-              <span className="text-[#00BFA6]">Secure</span> Managed <br />
+              <span className="text-[#06BAA3]">Secure</span> Managed <br />
               IT Services.
             </h1>
 
@@ -60,10 +60,10 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-4 flex-wrap">
-              <button className="flex items-center gap-2 px-7 py-3.5 bg-[#00BFA6] text-[#0A0A0A] font-semibold rounded-full transition-all duration-300 hover:bg-[#00E5C3] hover:shadow-[0_0_30px_rgba(0,191,166,0.3)] hover:-translate-y-0.5">
+              <button className="flex items-center gap-2 px-7 py-3.5 bg-[#06BAA3] text-black font-semibold rounded-full transition-all duration-300 hover:bg-[#06BAA3]/90 hover:shadow-[0_0_30px_rgba(6,186,163,0.3)] hover:-translate-y-0.5">
                 Get Started <HiArrowRight />
               </button>
-              <button className="flex items-center gap-2 px-7 py-3.5 bg-transparent border border-gray-300 dark:border-[#333] text-gray-900 dark:text-white font-semibold rounded-full transition-all duration-300 hover:border-[#00BFA6] hover:text-[#00BFA6] hover:-translate-y-0.5">
+              <button className="flex items-center gap-2 px-7 py-3.5 bg-transparent border border-gray-300 dark:border-[#333] text-gray-900 dark:text-white font-semibold rounded-full transition-all duration-300 hover:border-[#06BAA3] hover:text-[#06BAA3] hover:-translate-y-0.5">
                 <HiPlay /> Watch Demo
               </button>
             </div>
@@ -107,7 +107,7 @@ export default function Hero() {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="absolute bottom-[12%] left-[-18%] z-20 flex items-center gap-3 px-4 py-3 bg-white/90 dark:bg-[#1A1A1A]/90 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-xl shadow-lg dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] whitespace-nowrap"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#00BFA6] flex items-center justify-center text-[#0A0A0A] text-lg shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-[#06BAA3] flex items-center justify-center text-black text-lg shrink-0">
                 <HiShieldCheck />
               </div>
               <div>
@@ -122,7 +122,7 @@ export default function Hero() {
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
               className="absolute top-[14%] right-[5%] z-20 flex items-center gap-3 px-4 py-3 bg-white/90 dark:bg-[#1A1A1A]/90 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-xl shadow-lg dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] whitespace-nowrap"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#00BFA6] flex items-center justify-center text-[#0A0A0A] text-lg shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-[#06BAA3] flex items-center justify-center text-black text-lg shrink-0">
                 <HiLightningBolt />
               </div>
               <div>
